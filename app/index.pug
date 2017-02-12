@@ -1,0 +1,146 @@
+include _styleguide
+
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css")
+	link(rel="stylesheet", href="css/style.css")
+	//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/onepage-scroll.min.css")
+	title Nashville Landing Page
+body
+	.main
+		section.splash
+			.overlay
+			.container
+				.splash__content
+					.splash__logotype
+						+logotype('#ffffff')
+					.splash__text
+						h1.ttu Dealer Summit Invitation
+						p Adam Audio has something new to show you and we would like to do it in Music City! Please click for your exclusive invitation to the Adam Audio Partner Sumit NASHVILLE. We have created what we consider the finest studio monitor platform available today and we wish to launch this platform through you, our partners. Such a task cannot be done through email. We need to get your ears on them in world class studios then formulate a plan TOGETHER. We would like the opportunity to fly you in, put you up, feed and lubricate you well in our home base of Music City USA! This is just a 2 night, 1 day affair (details below) and we have 2 sessions for you to choose from:
+
+						a(href="http://NashvilleSummitSession1.rsvpify.com").btn.btn-tertiary RSVP Session 1
+						a(href="http://NashvilleSummitSession2.rsvpify.com").btn.btn-tertiary RSVP Session 2
+
+		//- section.form-1
+		//- 	script(src="http://app.rsvpify.com/embed/112916", type="text/javascript")
+		//- 	script(src="http://app.rsvpify.com/js/iframeResizer.min.js", type="text/javascript")
+		//- 	script.
+		//- 		iFrameResize({
+		//- 			autoResize: true,
+		//- 			heightCalculationMethod: 'max',
+		//- 			enablePublicMethods: true
+		//- 		}, "#RSVPifyIFrame");
+
+		.section-header Monday, March 20
+
+		section.monday-1
+			.block
+				+visual-key-left('#D29E06')
+				.block__item.block__item-left
+					.block__text
+						h1 Accomodations: Fairfield Suites Downtown Nashville
+					.block__image
+						img(src='images/1.jpg', alt="")
+
+		section.monday-2
+			.block
+				+visual-key-right('#D29E06')
+				.block__item.block__item-right
+					.block__text
+						h1 7 p.m. Private Room Dinner - Orientation, Introductions, glad-handing @ Martin`s BBQ Downtown
+					.block__image
+						img(src='images/2.jpg', alt="")
+
+		section.monday-3
+			.block
+				+visual-key-left('#D29E06')
+				.block__item.block__item-left
+					.block__text
+						h1 8:30 p.m. After-dinner drinks hotel rooftop bar or private study (sleep)
+					.block__image
+						img(src='images/3.jpg', alt="")
+
+		.section-header Tuesday, March 21
+
+		section.tuesday-1
+			.block
+				+visual-key-right('#D29E06')
+				.block__item.block__item-right
+					.block__text
+						h1 Breakfast at hotel: Shuttle Pickup at 9:30 a.m.
+					.block__image
+						img(src='images/4.jpg', alt="")
+
+		section.tuesday-2
+			.block
+				+visual-key-left('#D29E06')
+				.block__item.block__item-left
+					.block__text
+						h1 Adam Audio USA Office Tour and coffee. 10:00 - noon Formal Product Presentation and German Accents
+					.block__image
+						img(src='images/5.jpg', alt="")
+
+		section.tuesday-3
+			.block
+				+visual-key-right('#D29E06')
+				.block__item.block__item-right
+					.block__text
+						h1 12:30 Lite, BBQ, Lunch
+					.block__image
+						img(src='images/6.jpg', alt="")
+
+		section.tuesday-4
+			.block
+				+visual-key-left('#D29E06')
+				.block__item.block__item-left
+					.block__text
+						h1 2-5 p.m. S Series "Deep Dive" in-studio auditioning, breakout marketing meetings and studio tour Blackbird Studios<br>5:15-7 p.m. Downtime at hotel for emails, calls or nap
+					.block__image
+						img(src='images/7.png', alt="")
+
+		section.tuesday-5
+			.block
+				+visual-key-right('#D29E06')
+				.block__item.block__item-right
+					.block__text
+						h1 7:15 p.m - ??<br>Dinner at Pinewood Social, great foot, greater drinks, games and awards.  Shuttle will be going back and forth to hotel every 30 minutes for those who don`t partake
+					.block__image
+						img(src='images/8.jpg', alt="")
+
+		.section-header Wednesday, March 22
+
+		section.wednesday
+			.block
+				+visual-key-left('#D29E06')
+				.block__item.block__item-left
+					.block__text
+						h1 Breakfast at hotel. Transportation provided to airport as needed
+					.block__image
+						img(src='images/9.png', alt="")
+
+		section.sessions
+			.container
+				h1.ttu The itinerary repeats for Session 2
+
+				a(href="http://NashvilleSummitSession1.rsvpify.com").btn.btn-primary RSVP Session 1
+				a(href="http://NashvilleSummitSession2.rsvpify.com").btn.btn-primary RSVP Session 2
+
+		//- script(src="http://app.rsvpify.com/embed/113991", type="text/javascript")
+		//- script(src="http://app.rsvpify.com/js/iframeResizer.min.js", type="text/javascript")
+		//- script.
+		//- 	iFrameResize({
+		//- 		autoResize: true,
+		//- 		heightCalculationMethod: '100vh',
+		//- 		enablePublicMethods: true
+		//- 	}, "#RSVPifyIFrame2");
+
+
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+	//- script(src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.2/scrollreveal.min.js")
+	script(src="js/main-min.js")
