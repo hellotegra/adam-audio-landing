@@ -1,5 +1,7 @@
+general:
+  build_dir: build
 deployment:
-  staging:
+  production:
     branch: master
-    heroku:
-      appname: adam-audio-landing
+    commands:
+      - ./deploy.sh
