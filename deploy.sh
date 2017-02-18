@@ -4,8 +4,7 @@ ssh -v root@138.68.80.119 << EOF
 
 echo '1. Updating sources'
 cd /var/www/project.tegra.co/
-git checkout --force master
-git pull
+git clone https://github.com/tegracorp/adam-audio-landing.git
 
 echo 'Done!'
 
