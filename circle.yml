@@ -2,4 +2,4 @@ deployment:
   production:
     branch: master
     commands:
-      - aws s3 sync /build/ s3://http://aws-website-protegraco-tlm8f.s3-website-us-east-1.amazonaws.com/adam-audio-landing/ --delete
+      - aws s3 sync build/ s3://http://aws-website-protegraco-tlm8f.s3-website-us-east-1.amazonaws.com/ --delete
