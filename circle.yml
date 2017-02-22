@@ -1,3 +1,5 @@
+general:
+  build_dir: build
 deployment:
   prod:
     branch: master
