@@ -1,7 +1,5 @@
-general:
-  build_dir: build
 deployment:
   production:
     branch: master
     commands:
-      - ./deploy.sh
+      - aws s3 sync /build/ s3://https://d4gp5l0i6v1b1.cloudfront.net/adam-audio-landing/ --delete
