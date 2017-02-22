@@ -2,4 +2,5 @@ deployment:
   production:
     branch: master
     commands:
+      - sudo pip install awscli
       - aws s3 sync build/ s3://aws-website-protegraco-tlm8f --delete
