@@ -1,7 +1,10 @@
 general:
   build_dir: build
+test:
+  override:
+    - echo "test"
 deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync build/ s3://aws-website-protegraco-tlm8f --delete
+      - aws s3 sync . s3://aws-website-protegraco-tlm8f/adam-audio-landing/ --delete
