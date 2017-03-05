@@ -7,4 +7,4 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync . s3://aws-website-protegraco-tlm8f/adam-audio-landing/ --delete
+      - aws s3 sync . s3://tegra.design/adam-audio-landing/ --delete
